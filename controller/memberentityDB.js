@@ -15,14 +15,26 @@ app.get('/api/memberAuthState', middleware.checkToken, function (req, res) {
         });
 });
 
-app.get('/api/getMember', function (req, res) {
-    var email = req.query.email;
+// app.get('/api/getMember', function (req, res) {
+//     var email = req.query.email;
+//     member.getMember(email)
+//         .then((result) => {
+//             res.send(result);
+//         })
+//         .catch((err) => {
+//             console.log(err);
+//             res.status(500).send("Failed to get member");
+//         });
+// });
+
+app.get('/api/getMember/:email', function (req, res) {
+    const email = req.params.email; // Get email from URL parameter
     member.getMember(email)
         .then((result) => {
             res.send(result);
         })
         .catch((err) => {
-            console.log(err);
+            console.error(err);
             res.status(500).send("Failed to get member");
         });
 });

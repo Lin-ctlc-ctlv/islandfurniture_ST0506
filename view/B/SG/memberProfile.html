@@ -33,6 +33,35 @@
                 if(member.sla == 1) {
                     document.getElementById("serviceLevelAgreement").checked = true;
                 }
+                //Get member details
+                fetch(`/api/getMember/${member.email}`, {
+                    method: 'GET',
+                    headers: {
+                        Authorization: `Bearer ${authToken}`, // Space after 'Bearer'
+                    },
+                })
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error(`HTTP error! Status: ${response.status}`);
+                        }
+                        return response.json(); // Parse JSON response
+                    })
+                    .then(data => {
+                        // Populate input fields with the fetched data
+                        document.getElementById("email").value = data.email || "";
+                        document.getElementById("name").value = data.name || "";
+                        document.getElementById("phone").value = data.phone || "";
+                        document.getElementById("country").value = data.city || "";
+                        document.getElementById("address").value = data.address || "";
+                        document.getElementById("age").value = data.age || "";
+                        document.getElementById("income").value = data.income || "";
+                        document.getElementById("securityQuestion").value= data.securityQuestion|| "";
+                        document.getElementById("securityAnswer").value= data.securityAnswer|| "";
+                    })
+                    .catch(error => {
+                        console.error("Error fetching member data:", error);
+                        alert("Failed to load profile data.");
+                    });
 
                 //Get Bought Items
                 fetch(new Request('/api/getBoughtItem/' + member.id,
