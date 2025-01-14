@@ -102,7 +102,8 @@ document.write('\
                                 <ul class="dropdown-menu">\
                                     <li><a id="bedMattressLink"><i class="icon icon-map-marker"></i> Beds & Mattresses</a></li>\
                                     <li><a id="cabinetStorageLink"><i class="icon icon-map-marker"></i> Cabinets & Storage</a></li>\
-                                    <li><a id="tableDeskLink"><i class="icon icon-map-marker"></i> Tables & Desk</a></li>\                                </ul>\
+                                    <li><a id="tableDeskLink"><i class="icon icon-map-marker"></i> Tables & Desk</a></li>\
+                                </ul>\
                             </li>\
                             <li class="dropdown-submenu">\
                                 <a class="dropdown-toggle" href="#">Kitchen</a>\
@@ -132,6 +133,9 @@ document.write('\
                             <li><a href="/B/' + countryPrefix + '/furnitureCategory.html?cat=Children"><i class="icon icon-map-marker"></i> Children</a></li>\
                             <li><a id="retailProductLink"><i class="icon icon-coffee"></i> Retail Products</a></li>\
                         </ul>\
+                    </li>\
+                    <li>\
+                        <a href="/B/' + countryPrefix + '/promotions.html">Promotions</a>\
                     </li>\
                 </ul>\
             </nav>\
