@@ -15,17 +15,17 @@ app.get('/api/memberAuthState', middleware.checkToken, function (req, res) {
         });
 });
 
-// app.get('/api/getMember', function (req, res) {
-//     var email = req.query.email;
-//     member.getMember(email)
-//         .then((result) => {
-//             res.send(result);
-//         })
-//         .catch((err) => {
-//             console.log(err);
-//             res.status(500).send("Failed to get member");
-//         });
-// });
+app.get('/api/getMember', function (req, res) {
+    var email = req.query.email;
+    member.getMember(email)
+        .then((result) => {
+            res.send(result);
+        })
+        .catch((err) => {
+            console.log(err);
+            res.status(500).send("Failed to get member");
+        });
+});
 
 app.get('/api/getMember/:email', function (req, res) {
     const email = req.params.email; // Get email from URL parameter
@@ -34,7 +34,7 @@ app.get('/api/getMember/:email', function (req, res) {
             res.send(result);
         })
         .catch((err) => {
-            console.error(err);
+            console.log(err);
             res.status(500).send("Failed to get member");
         });
 });
