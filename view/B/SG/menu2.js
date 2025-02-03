@@ -123,16 +123,14 @@ document.write('\
                             All Departments<i class="icon icon-angle-down"></i>\
                         </a>\
                         <ul class="dropdown-menu">\
-                            <li><a id="tableDeskLink"><i class="icon icon-map-marker"></i> Tables & Desk</a></li>\
+                            <li><a href="/B/' + countryPrefix + '/furnitureCategory.html?cat=Tables%20%26%20Desks"><i class="icon icon-map-marker"></i>Table & Desks</a></li>\
                             <li><a href="/B/' + countryPrefix + '/furnitureCategory.html?cat=Bathroom"><i class="icon icon-map-marker"></i> Bathroom</a></li>\
-                            <li><a id="bedMattressLink"><i class="icon icon-map-marker"></i> Beds & Mattresses</a></li>\
-                            <li><a id="sofaChairLink"><i class="icon icon-map-marker"></i> Sofas & Chair</a></li>\
-                            <li><a id="cabinetStorageLink"><i class="icon icon-map-marker"></i> Cabinets & Storage</a></li>\
+                            <li><a href="/B/' + countryPrefix + '/furnitureCategory.html?cat=Beds%20%26%20Mattresses"><i class="icon icon-map-marker"></i>Beds and Mattresses</a></li>\
+                            <li><a href="/B/' + countryPrefix + '/furnitureCategory.html?cat=Sofas%20%26%20Chair"><i class="icon icon-map-marker"></i>Sofas and Chairs</a></li>\
+                            <li><a href="/B/' + countryPrefix + '/furnitureCategory.html?cat=Cabinets%20%26%20Storage"><i class="icon icon-map-marker"></i>Cabinets & Storage</a></li>\
                             <li><a href="/B/' + countryPrefix + '/furnitureCategory.html?cat=Lightings"><i class="icon icon-map-marker"></i> Lightings</a></li>\
                             <li><a href="/B/' + countryPrefix + '/furnitureCategory.html?cat=Study"><i class="icon icon-map-marker"></i> Study</a></li>\
-                            <li><a href="/B/' + countryPrefix + '/furnitureCategory.html?cat=Children"><i class="icon icon-map-marker"></i> Children</a></li>\
-                            <li><a id="retailProductLink"><i class="icon icon-coffee"></i> Retail Products</a></li>\
-                        </ul>\
+                            <li><a href="/B/' + countryPrefix + '/furnitureCategory.html?cat=Children"><i class="icon icon-map-marker"></i> Children</a></li>\                        </ul>\
                     </li>\
                     <li>\
                         <a href="/B/' + countryPrefix + '/promotions.html">Promotions</a>\
